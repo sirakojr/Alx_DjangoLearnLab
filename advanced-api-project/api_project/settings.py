@@ -129,3 +129,10 @@ REST_FRAMEWORK = {
     ],
 }
 # rest_framework.permissions.IsAuthenticated
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': [
+        'django_filters.rest_framework.DjangoFilterBackend',
+        'rest_framework.filters.SearchFilter',
+        'rest_framework.filters.OrderingFilter',
+    ],
+}
